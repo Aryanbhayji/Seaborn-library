@@ -1,0 +1,44 @@
+| Attribute   | What it controls               |
+| ----------- | ------------------------------ |
+| `data`      | Dataset/DataFrame              |
+| `x`         | X-axis variable                |
+| `y`         | Y-axis variable                |
+| `hue`       | Color based on variable        |
+| `style`     | Marker/style based on variable |
+| `size`      | Point size based on variable   |
+| `palette`   | Color palette                  |
+| `color`     | Single color                   |
+| `alpha`     | Transparency                   |
+| `marker`    | Marker shape                   |
+| `linewidth` | Line thickness                 |
+| `linestyle` | Line style                     |
+| `order`     | Category order                 |
+| `hue_order` | Hue category order             |
+| `bins`      | Histogram intervals            |
+| `kde`       | Smooth distribution curve      |
+| `stat`      | Histogram statistic            |
+| `annot`     | Values inside heatmap          |
+| `fmt`       | Number formatting              |
+| `cmap`      | Heatmap color mapping          |
+| `vmin`      | Minimum color value            |
+| `vmax`      | Maximum color value            |
+| `center`    | Center of color scale          |
+| `legend`    | Show/hide legend               |
+| `estimator` | Statistical aggregation        |
+| `errorbar`  | Error/uncertainty display      |
+
+
+
+
+
+                 SEABORN PLOT
+                      │
+       ┌──────────────┼──────────────┐
+       ↓              ↓              ↓
+     DATA          MAPPING        APPEARANCE
+       │              │              │
+     data        ┌────┼────┐     palette
+                 ↓    ↓    ↓     color
+                 x    y   hue     alpha
+                      │    │       marker
+                    style size     linewidth
