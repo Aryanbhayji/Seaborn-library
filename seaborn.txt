@@ -1,3 +1,19 @@
+
+Matplotlib gives you low-level control over a plot, while Seaborn gives you a higher-level,
+ easier interface for statistical/data visualization.
+
+
+Matplotlib
+   ↓
+"Build the graph yourself and control almost everything"
+
+Seaborn
+   ↓
+"Tell me what your data means, and I'll create a good statistical plot"
+
+
+
+
 | Attribute   | What it controls               |
 | ----------- | ------------------------------ |
 | `data`      | Dataset/DataFrame              |
@@ -42,3 +58,49 @@
                  x    y   hue     alpha
                       │    │       marker
                     style size     linewidth
+
+
+
+                    Pandas
+                      ↓
+                    Matplotlib fundamentals
+                      ↓
+                    Seaborn
+                      ↓
+                    Matplotlib + Seaborn together
+                      ↓
+                    EDA(Exploratory Data Analysis ) --->EDA is the process of exploring and understanding your dataset before you build a machine-learning model or make conclusions from it.
+                      ↓
+                    Machine Learning visualization
+
+
+
+
+TYPES OF EDA process
+
+Raw Dataset
+     ↓
+1. Understand the data
+     ↓
+2. Clean the data
+     ↓
+3. Analyze statistics
+     ↓
+4. Visualize the data
+     ↓
+5. Find patterns
+     ↓
+6. Find problems/outliers
+     ↓
+7. Prepare data for ML
+
+  
+  
+              EDA
+               │
+       ┌───────┼───────┐
+       ↓       ↓       ↓
+     Pandas Matplotlib Seaborn
+       │       │       │
+    Analyze  Plot     Statistical
+    & clean  anything  visualization
