@@ -104,3 +104,18 @@ Raw Dataset
        │       │       │
     Analyze  Plot     Statistical
     & clean  anything  visualization
+
+
+
+    | Plot                | Main use in ML                             | Importance |
+| ------------------- | ------------------------------------------ | ---------- |
+| `sns.histplot()`    | Understand distribution of a feature       | ⭐⭐⭐⭐⭐      |
+| `sns.kdeplot()`     | See probability/distribution shape         | ⭐⭐⭐⭐       |
+| `sns.boxplot()`     | Detect outliers + compare distributions    | ⭐⭐⭐⭐⭐      |
+| `sns.violinplot()`  | Distribution + density by category         | ⭐⭐⭐        |
+| `sns.scatterplot()` | Find relationship between 2 features       | ⭐⭐⭐⭐⭐      |
+| `sns.pairplot()`    | Quickly analyze many features together     | ⭐⭐⭐⭐⭐      |
+| `sns.heatmap()`     | Correlation matrix / feature relationships | ⭐⭐⭐⭐⭐      |
+| `sns.countplot()`   | Analyze categorical/class frequencies      | ⭐⭐⭐⭐⭐      |
+| `sns.barplot()`     | Compare numerical values across categories | ⭐⭐⭐        |
+| `sns.lineplot()`    | Trends/time-series data                    | ⭐⭐⭐        |
