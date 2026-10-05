@@ -119,3 +119,108 @@ Raw Dataset
 | `sns.countplot()`   | Analyze categorical/class frequencies      | ⭐⭐⭐⭐⭐      |
 | `sns.barplot()`     | Compare numerical values across categories | ⭐⭐⭐        |
 | `sns.lineplot()`    | Trends/time-series data                    | ⭐⭐⭐        |
+
+
+
+
+##boxplot##--->
+
+             ●  ← Maximum / possible upper value
+             │
+          ───┤  ← Upper whisker
+       ┌─────────┐
+       │         │
+       │    ─────│ ← Median
+       │         │
+       └─────────┘
+          │
+       ───┤  ← Lower whisker
+          │
+          ●  ← Minimum / possible lower value
+
+
+
+                 Upper whisker
+            │
+            ├───────┐
+            │       │
+            │       │
+            │   ────│ ← Median
+            │       │
+            │       │
+            └───────┘
+                    │
+                 Lower whisker
+
+                    • ← Outlier
+
+
+       Q1                 Q3
+        ↓                  ↓
+        ┌──────────────────┐
+        │       50%        │
+        │     of data      │
+        └──────────────────┘
+
+        This distance is called the IQR (Interquartile Range):
+
+                              $$ IQR = Q3-Q1 $$
+
+
+
+##histplot##--->
+
+A histogram tells you how many data points fall into different ranges of values.
+
+
+Marks       Number of students
+
+10–20       ███
+20–30       ███
+30–40       ████
+40–50       ███
+50–60       █████
+60–70       ██
+70–80       ██
+80–90       █
+
+Frequency
+   ↑
+ 10│        █
+  8│        █
+  6│    █   █
+  4│    █   █   █
+  2│ █  █   █   █
+  0└────────────────→
+     0  20  40  60
+          Values
+
+
+bin=A bin is simply a range of values.
+bins=10 means:
+
+Divide the range of values into approximately 10 intervals.
+
+Difference-->
+                                                                     
+
+| Histogram                  | Boxplot                       |
+| -------------------------- | ----------------------------- |       
+| Shows distribution         | Summarizes distribution       |
+| Shows frequency            | Shows quartiles               |
+| Shows shape                | Shows median                  |
+| Shows skewness clearly     | Shows skewness indirectly     |
+| Can show multiple peaks    | Doesn't show peaks as clearly |
+| Can suggest unusual values | Very good for outliers        |
+| Uses bins                  | Uses Q1, median, Q3, whiskers |
+
+
+Histogram
+    ↓
+"What does the entire distribution look like?"
+
+Boxplot
+    ↓
+"Where is the center, how spread out is it,
+and are there possible outliers?"
+
