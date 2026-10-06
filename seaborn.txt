@@ -144,7 +144,7 @@ Raw Dataset
             │
             ├───────┐
             │       │
-            │       │
+            │       │ 
             │   ────│ ← Median
             │       │
             │       │
@@ -224,3 +224,90 @@ Boxplot
 "Where is the center, how spread out is it,
 and are there possible outliers?"
 
+
+##kdeplot()##
+
+KDE stands for Kernel Density Estimate
+1. Instead of showing bars like a histogram, KDE creates a smooth curve showing where the data is concentrated.
+
+Density
+  ^
+  |              /\
+  |            /████\
+  |          /████████\
+  |________/████████████\____
+  +----------------------------> Age
+
+
+##violinplot()##
+
+A violin plot shows the distribution of numerical data, while also showing the median, quartiles, and density.
+
+Think of it as:
+
+Violin plot = Boxplot + KDE distribution shape
+
+
+        ╭──╮
+       ╱    ╲
+      │      │
+       ╲    ╱
+        ╰──╯
+
+The width of the violin tells you how much data is concentrated around that value.
+
+Wider → more data concentrated there
+Narrower → less data concentrated there
+
+       ╭────╮
+      /      \
+     │ ────── │  ← Q3
+     │   ──   │  ← Median
+     │ ────── │  ← Q1
+      \      /
+       ╰────╯
+
+
+| Feature               | Boxplot   | Violinplot      |
+| --------------------- | --------- | --------------- |
+| Median                | ✅         | ✅               |
+| Q1/Q3                 | ✅         | ✅               |
+| IQR                   | ✅         | ✅               |
+| Distribution shape    | ❌         | ✅               |
+| Density               | ❌         | ✅               |
+| Multiple peaks        | Difficult | ✅               |
+| Outliers              | ✅ Clearly | Not as directly |
+| Compact summary       | ⭐⭐⭐       | ⭐⭐              |
+| Detailed distribution | ⭐⭐        | ⭐⭐⭐             |
+
+
+
+Boxplot
+
+Answers:
+
+"What are the median, quartiles, spread, and possible outliers?"
+
+Violinplot
+
+Answers:
+
+"What are the median/quartiles AND what does the entire distribution look like?"
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+HISTOGRAM
+   ↓
+"How many values are in each range?"
+
+KDE
+   ↓
+"What does the smooth distribution look like?"
+
+BOXPLOT
+   ↓
+"What's the median, quartiles and possible outliers?"
+
+VIOLINPLOT
+   ↓
+"What are the summary statistics AND the distribution shape?"
