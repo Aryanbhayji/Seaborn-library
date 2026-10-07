@@ -121,7 +121,7 @@ Raw Dataset
 | `sns.lineplot()`    | Trends/time-series data                    | ⭐⭐⭐        |
 
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------
 
 ##boxplot##--->
 
@@ -166,7 +166,7 @@ Raw Dataset
 
                               $$ IQR = Q3-Q1 $$
 
-
+------------------------------------------------------------------------------------------------------------------------------------------
 
 ##histplot##--->
 
@@ -238,6 +238,7 @@ Density
   |________/████████████\____
   +----------------------------> Age
 
+-----------------------------------------------------------------------------------------------------------------------------------------
 
 ##violinplot()##
 
@@ -311,3 +312,49 @@ BOXPLOT
 VIOLINPLOT
    ↓
 "What are the summary statistics AND the distribution shape?"
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+##pairplot##
+
+pairplot() creates many plots at once, showing the relationship between every pair of selected numerical columns.
+
+sns.pairplot(df)
+
+------> Seaborn creates a grid something like:
+
+             Age       Salary      Experience
+
+Age          KDE        Scatter       Scatter
+
+Salary       Scatter    KDE           Scatter
+
+Experience   Scatter    Scatter       KDE
+
+
+🔹 Off-diagonal plots = relationships
+
+🔹 Diagonal plots = individual distributions
+
+
+One important limitation ⚠️
+
+If your dataset has lots of columns:
+
+5 columns → manageable
+10 columns → getting busy
+20 columns → very crowded
+50 columns → terrible idea 😅
+
+Because pairplot creates many combinations.
+
+If you have n numerical variables, the number of unique pairwise relationships is:
+
+              {n(n-1)}/{2} 
+
+For example, with 10 variables:
+
+              {10(9)}/{2}=45 
+
+So you'll have 45 unique pairwise relationships.
+
+That's why it's better to select important features.
