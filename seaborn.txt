@@ -358,3 +358,40 @@ For example, with 10 variables:
 So you'll have 45 unique pairwise relationships.
 
 That's why it's better to select important features.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+##pairgrid()##
+
+pairplot() = easy, ready-made pairwise plot
+PairGrid() = customizable framework for building your own pairwise plot
+
+
+You can separately control:
+
+-diagonal
+-upper triangle
+-lower triangle
+-different plot types
+-different functions for different parts
+
+For example:
+
+   g = sns.PairGrid(df)
+
+   g.map_upper(sns.scatterplot)
+   g.map_lower(sns.regplot)
+   g.map_diag(sns.histplot)
+
+
+ PairGrid
+   ↓
+More control
+   ↓
+You design the grid yourself
+
+
+pairplot
+   ↓
+Less control
+   ↓
+Seaborn designs the grid for you
