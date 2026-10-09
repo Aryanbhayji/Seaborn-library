@@ -395,3 +395,54 @@ pairplot
 Less control
    ↓
 Seaborn designs the grid for you
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+##heatmap()##
+
+The heatmap() function in Seaborn represents numerical values using different colors.
+It helps you identify patterns, relationships, high and low values, and correlations in your dataset.
+
+3. The most important use: (correlation heatmap)
+
+In Machine Learning, one of the most common uses of a heatmap is to visualize a correlation matrix.
+
+Correlation measures the strength and direction of a linear relationship between two numerical variables.
+
+
+⭐4. How to read a correlation heatmap
+
+Correlation values range from −1 to +1.
+
++1
+
+Perfect positive correlation
+
+When one variable increases, the other increases in a perfectly linear way.
+
+0
+
+No linear correlation
+
+There is no linear relationship. A nonlinear relationship may still exist.
+
+−1
+
+Perfect negative correlation
+
+When one variable increases, the other decreases in a perfectly linear way.
+
+
+A common interpretation guide:
+
+Correlation magnitude
+General interpretation:
+
+0.00–0.19 ------> Very weak
+
+0.20–0.39 -----> Weak
+
+0.40–0.59 ------> Moderate
+
+0.60–0.79 ------> Strong
+
+0.80–1.00 ------>Very strong
