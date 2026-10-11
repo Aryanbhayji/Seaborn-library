@@ -446,3 +446,16 @@ General interpretation:
 0.60–0.79 ------> Strong
 
 0.80–1.00 ------>Very strong
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+##countplot()##
+
+In Seaborn, sns.countplot() is used to count how many times each category appears in a dataset and display those counts as bars.
+
+How to interpret this graph:
+
+-The x-axis represents the days of the week recorded in the dataset.
+
+-The y-axis represents the number of observations for each day.
+
+-A taller bar means that the category appears more frequently.
