@@ -459,3 +459,45 @@ How to interpret this graph:
 -The y-axis represents the number of observations for each day.
 
 -A taller bar means that the category appears more frequently.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+##barplot()##
+
+In Seaborn, sns.barplot() is used to compare a numerical value across different categories,
+ usually by calculating the mean (average) of the numerical values within each category.
+
+
+ Day
+
+	
+
+Bill amount
+
+Monday
+
+₹100
+
+Monday
+
+₹200
+
+Monday
+
+₹300
+
+Tuesday
+
+₹200
+
+Tuesday
+
+₹400
+
+A barplot calculates the average for each day.
+
+Monday: (100+200+300)/3=₹200
+
+Tuesday: (200+400)/2=₹300
+
+
