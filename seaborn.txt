@@ -501,3 +501,28 @@ Monday: (100+200+300)/3=₹200
 Tuesday: (200+400)/2=₹300
 
 
+[ Bar = estimated value (usually the mean).
+
+Spike = error bar showing uncertainty or variability, depending on the selected method.]
+
+
+The main difference is:
+
+>barplot() shows a summary value, usually the mean (average) for each category.
+
+>boxplot() shows the distribution of numerical data, including the median, quartiles, spread, and potential outliers.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+##lineplot()##
+
+In Seaborn, sns.lineplot() is used to visualize how a numerical variable changes in relation to another variable, often over time.
+
+A lineplot connects the points in order, helping you see how sales change.
+
+~An upward line indicates increasing values.
+
+~A downward line indicates decreasing values.
+
+~A relatively flat line indicates little change.
+
+~Sharp changes indicate rapid increases or decreases.
