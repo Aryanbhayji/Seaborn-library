@@ -526,3 +526,19 @@ A lineplot connects the points in order, helping you see how sales change.
 ~A relatively flat line indicates little change.
 
 ~Sharp changes indicate rapid increases or decreases.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+##clustermap()##
+
+It creates a heatmap that groups similar rows and columns together using hierarchical clustering.
+
+2. Why do we use it in machine learning?
+
+Imagine you have a dataset containing information about customers:
+
+Customers A and B have similar values. Customers C and D also have similar values.
+
+A clustermap can help reveal these patterns by grouping similar rows together.
+
+Important: A clustermap is a visualization tool. It can reveal potential groups,
+          but it does not automatically create a reusable clustering model or prove that meaningful customer segments exist.
