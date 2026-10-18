@@ -542,3 +542,15 @@ A clustermap can help reveal these patterns by grouping similar rows together.
 
 Important: A clustermap is a visualization tool. It can reveal potential groups,
           but it does not automatically create a reusable clustering model or prove that meaningful customer segments exist.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+##FacetGrid()##
+
+In Seaborn, FacetGrid() helps you create multiple plots from one dataset,
+ arranged in rows and columns, so you can compare different groups easily.
+
+Imagine you have supermarket sales data. Instead of putting every day's sales on one crowded graph,
+ you could create separate plots for Monday, Tuesday, Wednesday, and so on. That makes patterns easier to compare.
+
+
+ col--->	Creates separate columns by category	, col="time"
