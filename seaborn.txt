@@ -554,3 +554,19 @@ Imagine you have supermarket sales data. Instead of putting every day's sales on
 
 
  col--->	Creates separate columns by category	, col="time"
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+##stripplot()##
+
+In Seaborn, sns.stripplot() creates a scatter plot that shows individual data points for different categories. 
+It's useful for seeing how numerical values are distributed within groups, especially during Exploratory Data Analysis (EDA).
+
+For example, imagine you're analyzing student marks. A strip plot can show each student's mark for each subject,
+ helping you see where the marks are concentrated and whether any values are unusual.
+
+What is jitter? Why is it important?
+
+-->Suppose ten students all scored 80 marks. Without jitter, their dots may overlap, making it look like only one student scored 80.
+
+Jitter adds a small random shift along the categorical axis so overlapping points become easier to see.
+ It does not change the actual numerical measurements
