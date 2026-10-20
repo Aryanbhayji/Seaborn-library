@@ -570,3 +570,28 @@ What is jitter? Why is it important?
 
 Jitter adds a small random shift along the categorical axis so overlapping points become easier to see.
  It does not change the actual numerical measurements
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+##ecdfplot()##
+
+In Seaborn, sns.ecdfplot() shows how data accumulates as values increase. ECDF stands for Empirical Cumulative Distribution Function.
+
+For example, if you're analyzing students' marks, an ECDF plot can answer:
+- What proportion of students scored 60 or less?
+- What percentage scored 80 or less?
+- Which group generally has higher scores?
+
+
+X-axis: the values you're analyzing, such as marks or sales.
+
+
+
+Y-axis: the cumulative proportion of observations at or below each value.
+
+
+
+Line rising: more observations are being included as you move right.
+
+
+
+Line reaching 1.0 (100%): all observations have been included.
