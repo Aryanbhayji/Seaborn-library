@@ -595,3 +595,10 @@ Line rising: more observations are being included as you move right.
 
 
 Line reaching 1.0 (100%): all observations have been included.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+##rugplot()##
+
+In Seaborn, sns.rugplot() displays individual data values as tiny lines along the edge of a plot. 
+It's useful for understanding where observations are concentrated and how numerical data is distributed.
+
+height-->	Controls the length of the rug marks
