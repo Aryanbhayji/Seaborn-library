@@ -607,7 +607,7 @@ height-->	Controls the length of the rug marks
 
 ##boxenplot()##
 
-You probably mean sns.boxenplot(), which is a Seaborn function used to visualize the distribution of numerical data.
+sns.boxenplot(), which is a Seaborn function used to visualize the distribution of numerical data.
  It's similar to boxplot(), but it displays more quantiles, helping you understand the distribution in greater detail,
   especially with large datasets.
 
@@ -617,3 +617,31 @@ A boxen plot contains several boxes of different sizes.
 - Nested boxes: represent additional quantiles, revealing more detail about the data.
 - Outer boxes: extend toward the lower and upper tails of the distribution.
 - Extreme points: may be displayed separately as outliers.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+##residplot()##
+
+In Seaborn, sns.residplot() helps you check how well a regression model fits your data by plotting its residuals. 
+It is particularly useful in machine learning when you're building or evaluating a regression model.
+
+1. What is a residual?
+A residual is the difference between the actual value and the value predicted by your model.
+
+The formula is:
+
+{Residual} = {Actual Value} - {Predicted Value}
+
+
+Here's how to interpret the residuals:
+- Positive residual: The model predicted a value that was too low.
+- Negative residual: The model predicted a value that was too high.
+- Zero residual: The prediction was exactly correct.
+
+2. What does residplot() look like?
+A residual plot usually has:
+- X-axis: the predictor variable used by residplot().
+- Y-axis: residuals (actual values minus fitted values).
+- Horizontal zero line: the reference point where residuals equal zero.
+- Dots: individual observations and their prediction errors.
+
+
